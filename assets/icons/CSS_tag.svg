@@ -1,0 +1,21 @@
+<svg id="CSS_tag" data-name="CSS tag" xmlns="http://www.w3.org/2000/svg" width="150.271" height="97.057" viewBox="0 0 34.062 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4dd0e1;
+        stroke: #000;
+        stroke-width: 0.28px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        fill: #fafafa;
+        font-family: Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path id="CSS_Rectangle" data-name="CSS Rectangle" class="cls-1" d="M232.122,119.125h23.756a5,5,0,0,1,5,5v11.75a5,5,0,0,1-5,5H232.122a5,5,0,0,1-5-5v-11.75A5,5,0,0,1,232.122,119.125Z" transform="translate(-226.969 -119)"/>
+  <text id="CSS" class="cls-2" x="4.793" y="14.759">CSS</text>
+</svg>

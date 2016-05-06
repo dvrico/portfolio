@@ -1,0 +1,21 @@
+<svg id="Heroku_Tag" data-name="Heroku Tag" xmlns="http://www.w3.org/2000/svg" width="150.372" height="66" viewBox="0 0 50.124 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #9fa8da;
+        stroke: #000;
+        stroke-width: 0.28px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        fill: #fafafa;
+        font-family: Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path id="Heroku_Rectangle" data-name="Heroku Rectangle" class="cls-1" d="M144.089,152.125h39.822a5,5,0,0,1,5,5v11.75a5,5,0,0,1-5,5H144.089a5,5,0,0,1-5-5v-11.75A5,5,0,0,1,144.089,152.125Z" transform="translate(-138.938 -152)"/>
+  <text id="Heroku" class="cls-2" x="4.825" y="14.759">Heroku</text>
+</svg>

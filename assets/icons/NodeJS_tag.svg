@@ -1,0 +1,21 @@
+<svg id="NodeJS_Tag" data-name="NodeJS Tag" xmlns="http://www.w3.org/2000/svg" width="150.703" height="62.97" viewBox="0 0 53.25 22.25">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #66bb6a;
+        stroke: #000;
+        stroke-width: 0.28px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        fill: #fafafa;
+        font-family: Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path id="NodeJS_Rectangle" data-name="NodeJS Rectangle" class="cls-1" d="M65,152h43a5,5,0,0,1,5,5v12a5,5,0,0,1-5,5H65a5,5,0,0,1-5-5V157A5,5,0,0,1,65,152Z" transform="translate(-59.875 -151.875)"/>
+  <text id="NodeJS" class="cls-2" x="4.888" y="14.884">NodeJS</text>
+</svg>

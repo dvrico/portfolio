@@ -1,0 +1,21 @@
+<svg id="Photoshop_Tag" data-name="Photoshop Tag" xmlns="http://www.w3.org/2000/svg" width="150.129" height="47.142" viewBox="0 0 70.062 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ef5350;
+        stroke: #000;
+        stroke-width: 0.28px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        fill: #fafafa;
+        font-family: Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path id="Photoshop_Rectangle" data-name="Photoshop Rectangle" class="cls-1" d="M65.1,119.125h59.8a5,5,0,0,1,5,5v11.75a5,5,0,0,1-5,5H65.1a5,5,0,0,1-5-5v-11.75A5,5,0,0,1,65.1,119.125Z" transform="translate(-59.969 -119)"/>
+  <text id="Photoshop" class="cls-2" x="4.794" y="14.759">Photoshop</text>
+</svg>

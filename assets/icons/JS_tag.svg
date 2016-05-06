@@ -1,0 +1,21 @@
+<svg id="Javascript_Tag" data-name="Javascript Tag" xmlns="http://www.w3.org/2000/svg" width="150.134" height="47.826" viewBox="0 0 69.062 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e1a726;
+        stroke: #000;
+        stroke-width: 0.28px;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        font-size: 12px;
+        fill: #fafafa;
+        font-family: Arial;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <path id="Javascript_Rectangle" data-name="Javascript Rectangle" class="cls-1" d="M302.123,119.125h58.754a5,5,0,0,1,5,5v11.75a5,5,0,0,1-5,5H302.123a5,5,0,0,1-5-5v-11.75A5,5,0,0,1,302.123,119.125Z" transform="translate(-296.969 -119)"/>
+  <text id="Javascript" class="cls-2" x="4.793" y="14.759">Javascript</text>
+</svg>
