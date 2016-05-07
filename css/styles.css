@@ -46,6 +46,14 @@ a {
   #top_header .header_wrapper {
     width: 100%;
     margin: 0 auto; }
+    #top_header .header_wrapper .logo {
+      float: left;
+      font-size: 2rem;
+      font-weight: 500;
+      margin: .35rem 3rem;
+      color: #4d6683; }
+      #top_header .header_wrapper .logo:hover {
+        color: #d9686b; }
     #top_header .header_wrapper #main_nav {
       float: right;
       margin: 1rem 3rem; }

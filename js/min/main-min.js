@@ -1,1 +1,0 @@
-$("document").ready(function(){var n=$(".portfolio"),o=$(".bike"),e=$(".space");n.hover(function(){n.css("z-index","5")}),o.hover(function(){o.css("z-index","5")})});
