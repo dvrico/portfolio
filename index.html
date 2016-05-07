@@ -24,21 +24,21 @@
     <section id="banner">
       <div class="wrapper">
         <div class="content">
-          <h1 class="title">Howdy. <span>I'm David.</span> <span>I design and develop websites from scratch.</span></h1>
+          <h1 class="title">Howdy. <span class="second">I'm David.</span> <span class="third">I design and develop websites from scratch.</span></h1>
         </div>
       </div>
     </section>
 
     <section id="bio">
-      <div class="wrapper">
+      <div class="wrapper clearfix">
         <div id="avatar"></div>
         <div class="content">
           <h3>Hi there.</h3>
           <p class="description">I’m a web developer based in Baltimore, MD. I have a passion for all things tech and especially love designing and developing for the web. I started coding a little more than a year ago when I discovered Python and I haven’t let up since.</p>
         </div>
         <div class="links">
-          <a href="#" class="blog">View my blog</a>
-          <a href="#" class="linkedin">View my Linkedin</a>
+          <i class="fa fa-rss blog"></i><a href="#">View my blog</a>
+          <i class="fa fa-linkedin-square linkedin"></i><a href="#">View my Linkedin</a>
         </div>
       </div>
     </section>
@@ -48,17 +48,22 @@
     <section id="skills">
       <div class="wrapper">
         <h2>What I can do for you</h2>
-        <div id="skill_icons"></div>
-
-        <div class="skill_content">
+        <div id="skill-icons">
+          <div class="icon" id="ps-icon">Ps</div>
+          <div class="icon" id="ai-icon">Ai</div>
+          <div class="icon" id="html-icon">HTML</div>
+          <div class="icon" id="css-icon">CSS</div>
+          <div class="icon" id="js-icon">Js</div>
+        </div>
+        <div class="skill-content">
           <h3>Design what you want.</h3>
           <p class="description">When designing, my goals are focused on  pixel-perfect design that conveys the message that you want in the clearest way possible.</p>
           <div class="links">
-            <a href="#">View my desings on Behance</a>
+            <a href="#">View my designs on Behance</a>
           </div>
         </div>
 
-        <div class="skill_content">
+        <div class="skill-content">
           <h3>Develop what you need.</h3>
           <p class="description">Do you need your site developed in the latest technologies? Understanding the fundamentals of the web allows me to pick up the latest tools to meet your needs quickly.</p>
           <div class="links">
@@ -70,104 +75,116 @@
     </section>
 
     <section id="projects">
+
       <div class="wrapper">
         <h2>Projects</h2>
-        <h4>Highlights of past and present works.</h4>
+        <h4>Highlights of past and present work.</h4>
 
         <div class="project-highlight">
           <div class="project-title clearfix">
-            <h3>Designs &amp; Templates</h3>
+            <h3><a href="#">Designs &amp; Templates</a></h3>
             <div class="skill-tags">
-              <a href="#" class="ps-icon">Photoshop</a>
-              <a href="#" class="html-icon">HTML</a>
-              <a href="#" class="css-icon">CSS</a>
-              <a href="#" class="js-icon">Javscript</a>
+              <img src="/assets/icons/PS_tag.svg" alt="Photoshop Tag">
+              <img src="/assets/icons/HTML_tag.svg" alt="HTML Tag">
+              <img src="/assets/icons/CSS_tag.svg" alt="CSS Tag">
+              <img src="/assets/icons/JS_tag.svg" alt="Javascript Tag">
             </div>
           </div>
+
           <div class="project-content clearfix">
 
             <div class="project-thumbnail">
               <div id="design-thumbnails">
-                <a href="#" class="portfolio"></a>
-                <a href="#" class="bike"></a>
-                <a href="#" class="space"></a>
+                <img class="portfolio" src="/assets/images/design_photo_portfolio_xs.png" alt="Photo Porfolio Thumbnail" />
+                <img class="bike" src="/assets/images/design_bike_shop_xs.png" alt="Bike Shop Thumbnail" />
+                <img class="space" src="/assets/images/design_space_rainbow_xs.png" alt="Space Rainbow Thumbnail" />
               </div>
             </div>
 
             <p class="description">A gallery of designs crafted in Adobe Photoshop. Designs were converted into fully responsive templates for the web using HTML, CSS, and Javascript. Other technologies and tools used in the various templates include Jquery, SASS, and git.</p>
             <div class="links">
-              <a href="#" class="github">View the GitHub repo</a>
-              <a href="#" class="behance">View more designs on Behance</a>
+              <p><i class="fa fa-github"></i><a href="#" class="github">View the GitHub repo</a></p>
+              <p><i class="fa fa-behance"></i><a href="#" class="behance">View more designs on Behance</a></p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="w_separator"></div>
+      <div class="w_separator"></div>
 
+      <div class="wrapper">
         <div class="project-highlight">
           <div class="project-title clearfix">
-            <h3>Share the Internet</h3>
+            <h3><a href="#">Share the Internet</a></h3>
             <div class="skill-tags">
-              <a href="#" class="js-icon">Javascript</a>
-              <a href="#" class="node-icon">Nodejs</a>
-              <a href="#" class="html-icon">HTML</a>
-              <a href="#" class="css-icon">CSS</a>
-              <a href="#" class="heroku-icon">Heroku</a>
+              <img src="/assets/icons/JS_tag.svg" alt="Javascript Tag">
+              <img src="/assets/icons/NodeJS_tag.svg" alt="NodeJS Tag">
+              <img src="/assets/icons/HTML_tag.svg" alt="HTML Tag">
+              <img src="/assets/icons/CSS_tag.svg" alt="CSS Tag">
+              <img src="/assets/icons/heroku_tag.svg" alt="Heroku Tag">
             </div>
           </div>
           <div class="project-content clearfix">
-            <div class="project-thumbnail"></div>
+            <div class="project-thumbnail">
+              <img id="chat-room-thumbnail" src="/assets/images/project_thumbnail_share_the_internet.png" alt="Share The Internet Thumbnail" />
+            </div>
             <p class="description">A chat application written in Javascript that utilizes socket.io. Chat with your friends in a private chat room and view YouTube videos together in real-time. Built with NodeJs and deployed on Heroku. </p>
             <div class="links">
-              <a href="#" class="github">View the GitHub repo</a>
+              <p><i class="fa fa-github"></i><a href="#" class="github">View the GitHub repo</a></p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="w_separator"></div>
+      <div class="w_separator"></div>
 
+      <div class="wrapper">
         <div class="project-highlight">
           <div class="project-title clearfix">
             <h3>Third Project Highlight</h3>
             <div class="skill-tags">
-              <a href="#" class="ps-icon">Photoshop</a>
-              <a href="#" class="html-icon">HTML</a>
-              <a href="#" class="css-icon">CSS</a>
-              <a href="#" class="js-icon">Javscript</a>
+              <img src="/assets/icons/PS_tag.svg" alt="Photoshop Tag">
+              <img src="/assets/icons/HTML_tag.svg" alt="HTML Tag">
+              <img src="/assets/icons/CSS_tag.svg" alt="CSS Tag">
+              <img src="/assets/icons/JS_tag.svg" alt="Javascript Tag">
             </div>
           </div>
           <div class="project-content clearfix">
 
             <div class="project-thumbnail">
               <div id="design-thumbnails">
-                <a href="#" class="portfolio"></a>
-                <a href="#" class="bike"></a>
-                <a href="#" class="space"></a>
+                <img class="portfolio" src="/assets/images/design_photo_portfolio_xs.png" alt="Photo Porfolio Thumbnail" />
+                <img class="bike" src="/assets/images/design_bike_shop_xs.png" alt="Bike Shop Thumbnail" />
+                <img class="space" src="/assets/images/design_space_rainbow_xs.png" alt="Space Rainbow Thumbnail" />
               </div>
             </div>
 
             <p class="description">A gallery of designs crafted in Adobe Photoshop. Designs were converted into fully responsive templates for the web using HTML, CSS, and Javascript. Other technologies and tools used in the various templates include Jquery, SASS, and git.</p>
             <div class="links">
-              <a href="#" class="github">View the GitHub repo</a>
-              <a href="#" class="behance">View more designs on Behance</a>
+              <p><i class="fa fa-github"></i><a href="#" class="github">View the GitHub repo</a></p>
+              <p><i class="fa fa-behance"></i><a href="#" class="behance">View more designs on Behance</a></p>
             </div>
           </div>
         </div>
-
       </div>
+
     </section>
 
     <section id="contact">
       <div class="wrapper">
-        <h2>Let's Get in Contact.</h2>
+        <h2>Let's get in contact.</h2>
         <h4>Let's start chatting in whatever method you prefer:</h4>
         <div class="links">
-          <a href="#" class="email">dvvrico@gmail.com</a>
-          <a href="#" class="twitter">@dvrico_o</a>
-          <a href="#" class="blog">dvrico.github.io</a>
-          <a href="#" class="linkedin">Linkedin</a>
-          <a href="#" class="behance">behance.net/dvrico</a>
-          <a href="#" class="github">github.com/dvrico</a>
+          <div class="first-col">
+            <p><i class="fa fa-envelope-o"></i><a href="#" class="email">dvvrico@gmail.com</a></p>
+            <p><i class="fa fa-rss"></i><a href="#" class="blog">dvrico.github.io</a></p>
+            <p><i class="fa fa-behance"></i><a href="#" class="behance">behance.net/dvrico</a></p>
+          </div>
+          <div class="second-col">
+            <p><i class="fa fa-twitter"></i><a href="#" class="twitter">@dvrico_o</a></p>
+            <p><i class="fa fa-linkedin"></i><a href="#" class="linkedin">Linkedin</a></p>
+            <p><i class="fa fa-github"></i><a href="#" class="github">github.com/dvrico</a></p>
+          </div>
         </div>
       </div>
     </section>

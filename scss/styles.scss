@@ -1,6 +1,6 @@
 $main: #4d6683;
 $secondary: #d9686b;
-$tertiary: #585757;
+$tertiary: #787878;
 $black: #000000;
 $white: #ffffff;
 
@@ -22,9 +22,337 @@ html, body {
 }
 
 .wrapper{
-
+  width: 60vw;
+  margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: $tertiary;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+/* Page dividers --------*/
+
+.b_separator {
+  width: 65vw;
+  margin: 0 auto;
+  border-bottom: 1px solid $tertiary;
+}
+
+.w_separator {
+  width: 70vw;
+  margin: 5rem auto 1rem auto;
+  border-bottom: 1px solid $white;
+}
+
+/* Header ----------*/
+
+#top_header {
+  height: 3.5rem;
+  width: 100vw;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  background-color: $white;
+  .header_wrapper {
+    width: 100%;
+    margin: 0 auto;
+    #main_nav {
+      float: right;
+      margin: 1rem 3rem;
+      a {
+        margin: 0 1em;
+      }
+    }
+  }
+}
+
+/* Banner -----------*/
+
+#banner {
+  width: 100vw;
+  height: 80vh;
+  background: url(../assets/images/baltimore_bg.jpg) no-repeat center;
+  background-size: cover;
+  .content {
+    .title {                 // Title in ems to create that triangle effect.
+      color: $white;
+      font-size: 4.5em;
+      padding-top: .9em;
+      .second {
+        display: block;      // Make a newline.
+        font-size: 1em;
+      }
+      .third {
+        display: block;      // Make another newline.
+        font-size: .32em;
+        margin-top: .5em;
+      }
+    }
+  }
+}
+
+/* Bio section ---------*/
+
+#bio {
+  margin: 3rem 0;
+  #avatar {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: url(../assets/images/avatar.jpg) no-repeat center;
+    background-size: cover;
+  }
+  .content {
+    h3 {
+      margin: 0;
+      padding: 0 7em;
+      color: $main;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .description {
+      font-size: 1.2rem;
+      color: $tertiary;
+      padding-left: 11.7em;
+    }
+  }
+  .links {
+    padding-left: 14em;
+    margin-top: 2rem;
+    a {
+      font-size: 1.2rem;
+      margin-right: 6rem;
+    }
+    .blog,
+    .linkedin {
+      font-size: 1.2rem;
+      margin-right: .5rem;
+    }
+  }
+}
+
+/* Skills section ----------*/
+
+#skills {
+  margin: 2rem 0;
+  h2 {
+    text-align: center;
+    margin: 0 0 2rem 0;
+    font-size: 3rem;
+    font-weight: 400;
+    color: $secondary;
+  }
+  #skill-icons {
+    position: relative;
+    left: 50%;
+    margin-left: -250px;
+    .icon {
+      margin: 0 5px;
+      width: 90px;
+      height: 90px;
+      display: inline-block;
+      // Hide text
+      text-indent: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    #ps-icon {
+      background: url(../assets/icons/PS_icon.jpg) no-repeat center;
+      background-size: cover;
+    }
+    #ai-icon {
+      background: url(../assets/icons/AI_icon.jpg) no-repeat center;
+      background-size: cover;
+    }
+    #html-icon {
+      background: url(../assets/icons/HTML_icon.jpg) no-repeat center;
+      background-size: cover;
+    }
+    #css-icon {
+      background: url(../assets/icons/CSS_icon.jpg) no-repeat center;
+      background-size: cover;
+    }
+    #js-icon {
+      background: url(../assets/icons/JS_icon.svg) no-repeat center;
+      background-size: cover;
+    }
+  }
+  .skill-content {
+    h3 {
+      margin-top: 3rem;
+      text-align: center;
+      color: $main;
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    .description {
+      font-size: 1.2rem;
+      color: $tertiary;
+      text-align: center;
+      padding: 0 10rem;
+    }
+    .links {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 1rem 0 4rem 0;
+    }
+  }
+}
+
+/* Projects section --------- */
+
+#projects {
+  width: 100%;
+  background-color: $black;
+  padding: 2rem 0 5rem 0;
+  color: $white;
+  h2 {
+    color: $secondary;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0;
+  }
+  .project-highlight {
+    width: 100%;
+    .project-title {
+      width: 100%;
+      h3 {
+        display: inline-block;
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 1.2rem;
+        margin: 3rem 0 1.5rem 0;
+        a {
+          color: $white;
+          &:hover {
+            color: $secondary;
+          }
+        }
+      }
+      .skill-tags {
+        float: right;
+        margin: 3rem 0 1.5rem 0;
+        img {
+          height: 25px;
+        }
+      }
+    }
+    .project-content {
+      position: relative;
+      #chat-room-thumbnail {
+        position: absolute;
+        z-index: 1;
+        width: 45%;
+      }
+      #design-thumbnails {
+        .portfolio {
+          position: absolute;
+          z-index: 1;
+          width: 35%;
+          top: 0;
+          left: 0;
+        }
+        .bike {
+          position: absolute;
+          z-index: 2;
+          width: 35%;
+          top: 2.5rem;
+          left: 2.5rem;
+        }
+        .space {
+          position: absolute;
+          z-index: 3;
+          width: 35%;
+          top: 5rem;
+          left: 5rem;
+        }
+      }
+      .description {
+        padding-left: 25rem;
+      }
+      .links {
+        padding-left: 25.5rem;
+        margin-top: 2.5rem;
+        a {
+          margin-bottom: 1rem;
+          color: $white;
+          &:hover {
+            color: $secondary;
+          }
+        }
+        i {
+          font-size: 1.3rem;
+          margin-right: 1rem;
+        }
+        .fa-github {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+}
+
+/* Contact Section ----------*/
+
+#contact {
+  padding-bottom: 3rem;
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: $secondary;
+    margin: 1em 0 .15em 0;
+    font-weight: 300;
+  }
+  h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: $tertiary;
+    margin: 0 0 2em 0;
+  }
+  .links {
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    div {
+      margin: 1rem;
+    }
+    a {
+      font-size: 1.3rem;
+      margin-left: 1rem;
+      margin-bottom: .5rem;
+    }
+    i {
+      font-size: 2rem;
+    }
+    p {
+      &:hover {
+        color: $secondary;
+      }
+    }
+    /* Specific styles for slightly smaller icons */
+    .blog {
+      margin-left: 1.6rem;
+    }
+    .email {
+      margin-left: 1.2rem;
+    }
+  }
 }
