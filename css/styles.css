@@ -122,16 +122,16 @@ a {
       overflow: hidden;
       white-space: nowrap; }
     #skills #skill-icons #ps-icon {
-      background: url(../assets/icons/PS_icon.jpg) no-repeat center;
+      background: url(../assets/icons/PS_icon.svg) no-repeat center;
       background-size: cover; }
     #skills #skill-icons #ai-icon {
-      background: url(../assets/icons/AI_icon.jpg) no-repeat center;
+      background: url(../assets/icons/AI_icon.svg) no-repeat center;
       background-size: cover; }
     #skills #skill-icons #html-icon {
-      background: url(../assets/icons/HTML_icon.jpg) no-repeat center;
+      background: url(../assets/icons/HTML_icon.svg) no-repeat center;
       background-size: cover; }
     #skills #skill-icons #css-icon {
-      background: url(../assets/icons/CSS_icon.jpg) no-repeat center;
+      background: url(../assets/icons/CSS_icon.svg) no-repeat center;
       background-size: cover; }
     #skills #skill-icons #js-icon {
       background: url(../assets/icons/JS_icon.svg) no-repeat center;
@@ -192,24 +192,74 @@ a {
         position: absolute;
         z-index: 1;
         width: 45%; }
-      #projects .project-highlight .project-content #design-thumbnails .portfolio {
+        #projects .project-highlight .project-content #chat-room-thumbnail:hover {
+          box-shadow: 5px 5px 15px #787878; }
+      #projects .project-highlight .project-content #design-thumbnails .portfolio_thumbnail {
         position: absolute;
         z-index: 1;
         width: 35%;
         top: 0;
         left: 0; }
-      #projects .project-highlight .project-content #design-thumbnails .bike {
+        #projects .project-highlight .project-content #design-thumbnails .portfolio_thumbnail:hover {
+          box-shadow: 5px 5px 15px #787878;
+          -webkit-animation: slideup 1s ease;
+                  animation: slideup 1s ease;
+          -webkit-animation-fill-mode: forwards;
+                  animation-fill-mode: forwards; }
+@-webkit-keyframes slideup {
+  from {
+    top: 0; }
+  to {
+    top: -1.5rem; } }
+@keyframes slideup {
+  from {
+    top: 0; }
+  to {
+    top: -1.5rem; } }
+      #projects .project-highlight .project-content #design-thumbnails .bike_thumbnail {
         position: absolute;
         z-index: 2;
         width: 35%;
         top: 2.5rem;
         left: 2.5rem; }
-      #projects .project-highlight .project-content #design-thumbnails .space {
+        #projects .project-highlight .project-content #design-thumbnails .bike_thumbnail:hover {
+          box-shadow: 5px 5px 15px #787878;
+          -webkit-animation: slideup2 1s ease;
+                  animation: slideup2 1s ease;
+          -webkit-animation-fill-mode: forwards;
+                  animation-fill-mode: forwards; }
+@-webkit-keyframes slideup2 {
+  from {
+    top: 2.5rem; }
+  to {
+    top: 0rem; } }
+@keyframes slideup2 {
+  from {
+    top: 2.5rem; }
+  to {
+    top: 0rem; } }
+      #projects .project-highlight .project-content #design-thumbnails .space_thumbnail {
         position: absolute;
         z-index: 3;
         width: 35%;
         top: 5rem;
         left: 5rem; }
+        #projects .project-highlight .project-content #design-thumbnails .space_thumbnail:hover {
+          box-shadow: 5px 5px 15px #787878;
+          -webkit-animation: slideup3 1s ease;
+                  animation: slideup3 1s ease;
+          -webkit-animation-fill-mode: forwards;
+                  animation-fill-mode: forwards; }
+@-webkit-keyframes slideup3 {
+  from {
+    top: 5rem; }
+  to {
+    top: 2.5rem; } }
+@keyframes slideup3 {
+  from {
+    top: 5rem; }
+  to {
+    top: 2.5rem; } }
       #projects .project-highlight .project-content .description {
         padding-left: 25rem; }
       #projects .project-highlight .project-content .links {
@@ -240,25 +290,37 @@ a {
     font-size: 1.2rem;
     font-weight: 300;
     color: #787878;
-    margin: 0 0 2em 0; }
+    margin: 0 0 1.5em 0; }
   #contact .links {
     width: 50vw;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* Specific styles for slightly smaller icons */ }
     #contact .links div {
-      margin: 1rem; }
+      margin: .5rem 2rem; }
     #contact .links a {
       font-size: 1.3rem;
       margin-left: 1rem;
       margin-bottom: .5rem; }
     #contact .links i {
       font-size: 2rem; }
-    #contact .links p:hover {
-      color: #d9686b; }
+    #contact .links .space {
+      margin-left: 1.2rem; }
     #contact .links .blog {
       margin-left: 1.6rem; }
     #contact .links .email {

@@ -166,19 +166,19 @@ a {
     }
 
     #ps-icon {
-      background: url(../assets/icons/PS_icon.jpg) no-repeat center;
+      background: url(../assets/icons/PS_icon.svg) no-repeat center;
       background-size: cover;
     }
     #ai-icon {
-      background: url(../assets/icons/AI_icon.jpg) no-repeat center;
+      background: url(../assets/icons/AI_icon.svg) no-repeat center;
       background-size: cover;
     }
     #html-icon {
-      background: url(../assets/icons/HTML_icon.jpg) no-repeat center;
+      background: url(../assets/icons/HTML_icon.svg) no-repeat center;
       background-size: cover;
     }
     #css-icon {
-      background: url(../assets/icons/CSS_icon.jpg) no-repeat center;
+      background: url(../assets/icons/CSS_icon.svg) no-repeat center;
       background-size: cover;
     }
     #js-icon {
@@ -257,28 +257,58 @@ a {
         position: absolute;
         z-index: 1;
         width: 45%;
+        &:hover {
+          box-shadow: 5px 5px 15px $tertiary;
+        }
       }
       #design-thumbnails {
-        .portfolio {
+        .portfolio_thumbnail {
           position: absolute;
           z-index: 1;
           width: 35%;
           top: 0;
           left: 0;
+          &:hover {
+            box-shadow: 5px 5px 15px $tertiary;
+            animation: slideup 1s ease;
+            animation-fill-mode: forwards;
+            @keyframes slideup {
+              from { top: 0; }
+              to { top: -1.5rem; }
+            }
+          }
         }
-        .bike {
+        .bike_thumbnail {
           position: absolute;
           z-index: 2;
           width: 35%;
           top: 2.5rem;
           left: 2.5rem;
+          &:hover {
+            box-shadow: 5px 5px 15px $tertiary;
+            animation: slideup2 1s ease;
+            animation-fill-mode: forwards;
+            @keyframes slideup2 {
+              from { top: 2.5rem; }
+              to { top: 0rem; }
+            }
+          }
         }
-        .space {
+        .space_thumbnail {
           position: absolute;
           z-index: 3;
           width: 35%;
           top: 5rem;
           left: 5rem;
+          &:hover {
+            box-shadow: 5px 5px 15px $tertiary;
+            animation: slideup3 1s ease;
+            animation-fill-mode: forwards;
+            @keyframes slideup3 {
+              from { top: 5rem; }
+              to { top: 2.5rem; }
+            }
+          }
         }
       }
       .description {
@@ -322,7 +352,7 @@ a {
     font-size: 1.2rem;
     font-weight: 300;
     color: $tertiary;
-    margin: 0 0 2em 0;
+    margin: 0 0 1.5em 0;
   }
   .links {
     width: 50vw;
@@ -332,7 +362,7 @@ a {
     flex-wrap: nowrap;
     justify-content: center;
     div {
-      margin: 1rem;
+      margin: .5rem 2rem;
     }
     a {
       font-size: 1.3rem;
@@ -342,10 +372,8 @@ a {
     i {
       font-size: 2rem;
     }
-    p {
-      &:hover {
-        color: $secondary;
-      }
+    .space {
+      margin-left: 1.2rem;
     }
     /* Specific styles for slightly smaller icons */
     .blog {

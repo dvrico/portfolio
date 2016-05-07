@@ -1,14 +1,14 @@
-<svg id="javascript_icon" data-name="javascript icon" xmlns="http://www.w3.org/2000/svg" width="147" height="149" viewBox="0 0 147 149">
+<svg id="illustrator_icon" data-name="illustrator icon" xmlns="http://www.w3.org/2000/svg" width="147" height="149" viewBox="0 0 147 149">
   <defs>
     <style>
       .cls-1 {
-        fill: #d6cd15;
+        fill: #f0a70a;
         stroke: #ebebeb;
         stroke-width: 1px;
       }
 
       .cls-2 {
-        font-size: 86px;
+        font-size: 99px;
         fill: #fefefe;
         font-family: "Open Sans";
         font-weight: 700;
@@ -16,5 +16,5 @@
     </style>
   </defs>
   <rect id="javscript" class="cls-1" x="0.5" y="0.5" width="146" height="148" rx="10" ry="10"/>
-  <text id="Js" class="cls-2" transform="translate(40.612 95.491) scale(1 1.014)">Js</text>
+  <text id="Ai" class="cls-2" transform="translate(24.612 107.66) scale(1 1.014)">Ai</text>
 </svg>

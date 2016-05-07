@@ -1,0 +1,20 @@
+<svg id="photoshop_icon" data-name="photoshop icon" xmlns="http://www.w3.org/2000/svg" width="150" height="149" viewBox="0 0 150 149">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e35959;
+        stroke: #ebebeb;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        font-size: 102px;
+        fill: #fefefe;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <rect id="javscript" class="cls-1" x="0.5" y="0.5" width="149" height="148" rx="10" ry="10"/>
+  <text id="Ps" class="cls-2" transform="translate(19.61 109.69) scale(1 1.014)">Ps</text>
+</svg>

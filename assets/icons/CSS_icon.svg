@@ -1,0 +1,20 @@
+<svg id="css_icon" data-name="css icon" xmlns="http://www.w3.org/2000/svg" width="149" height="149" viewBox="0 0 149 149">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #3ad7e8;
+        stroke: #ebebeb;
+        stroke-width: 1px;
+      }
+
+      .cls-2 {
+        font-size: 63px;
+        fill: #fefefe;
+        font-family: "Open Sans";
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <rect id="javscript" class="cls-1" x="0.5" y="0.5" width="148" height="148" rx="10" ry="10"/>
+  <text id="CSS" class="cls-2" transform="translate(18.86 97.52) scale(1.014)">CSS</text>
+</svg>
