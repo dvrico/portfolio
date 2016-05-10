@@ -61,6 +61,9 @@ a {
       #top_header .header_wrapper #main_nav a {
         margin: 0 1em; }
 
+.menu {
+  display: none; }
+
 /* Banner -----------*/
 #banner {
   width: 100vw;
@@ -479,55 +482,48 @@ a {
           margin: 0 -0.2rem 0 0; }
 
   /* Contact Section ----------*/
-  #contact {
-    padding-bottom: 3rem; }
-    #contact h2 {
-      text-align: center;
-      font-size: 3rem;
-      color: #d9686b;
-      margin: 1em 0 .15em 0;
-      font-weight: 300; }
-    #contact h4 {
-      text-align: center;
-      font-size: 1.2rem;
-      font-weight: 300;
-      color: #787878;
-      margin: 0 0 1.5em 0; }
-    #contact .links {
-      width: 90vw;
-      margin: 0 auto;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: row;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-flex-wrap: nowrap;
-          -ms-flex-wrap: nowrap;
-              flex-wrap: nowrap;
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      /* Specific styles for slightly smaller icons */ }
-      #contact .links div {
-        margin: .5rem 2rem; }
-      #contact .links a {
-        font-size: 1rem;
-        margin-left: 1rem;
-        margin-bottom: .5rem; }
-      #contact .links i {
-        font-size: 1.8rem; }
-      #contact .links .space {
-        margin-left: 1.2rem; }
-      #contact .links .blog {
-        margin-left: 1.3rem; }
-      #contact .links .email {
-        margin-left: 1.2rem; } }
+  #contact .links {
+    width: 90vw;
+    /* Specific styles for slightly smaller icons */ }
+    #contact .links div {
+      margin: .5rem .5rem; }
+    #contact .links a {
+      font-size: 1rem;
+      margin-left: 1rem;
+      margin-bottom: .5rem; }
+    #contact .links i {
+      font-size: 1.8rem; }
+    #contact .links .space {
+      margin-left: 1.2rem; }
+    #contact .links .blog {
+      margin-left: 1.3rem; } }
 /*-----------------------Mobile L ---------------*/
+@media only screen and (max-width: 580px) {
+  /* Header -------------*/
+  .menu {
+    display: block;
+    float: right; }
+    .menu i {
+      font-size: 1.5rem;
+      color: #4d6683;
+      margin: 1rem 3rem; }
+
+  #top_header.active {
+    height: 17.5rem; }
+    #top_header.active .header_wrapper #main_nav.active {
+      display: block;
+      width: 60%;
+      margin: 0;
+      text-align: center; }
+      #top_header.active .header_wrapper #main_nav.active a {
+        display: block;
+        padding: 1rem 0;
+        border-bottom: 1px solid #787878; }
+        #top_header.active .header_wrapper #main_nav.active a:last-child {
+          border-bottom: none; }
+
+  #main_nav {
+    display: none; } }
 /*-----------------------XL ---------------*/
 @media only screen and (min-width: 1450px) {
   /* Banner -----------*/
