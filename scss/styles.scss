@@ -24,6 +24,7 @@ html, body {
 .wrapper{
   width: 60vw;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -89,14 +90,16 @@ a {
 
 #banner {
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   background: url(../assets/images/baltimore_bg.jpg) no-repeat center;
   background-size: cover;
   .content {
+    position: absolute;
+    top: 12%;
+    left: 20%;
     .title {                 // Title in ems to create that triangle effect.
       color: $white;
       font-size: 4.5em;
-      padding-top: .9em;
       .second {
         display: block;      // Make a newline.
         font-size: 1em;
@@ -140,7 +143,7 @@ a {
     margin-top: 2rem;
     a {
       font-size: 1.2rem;
-      margin-right: 6rem;
+      margin-right: 18%; //6rem
     }
     .blog,
     .linkedin {
@@ -366,7 +369,7 @@ a {
     margin: 0 0 1.5em 0;
   }
   .links {
-    width: 50vw;
+    width: 60vw;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -394,4 +397,421 @@ a {
       margin-left: 1.2rem;
     }
   }
+}
+
+/* Media Queries ------*/
+
+
+/*---------------------- M ---------------*/
+@media only screen and (max-width: 1225px) {
+
+  .wrapper {
+    width: 70vw;
+  }
+
+  /* Projects section --------- */
+
+  #projects {
+    .project-highlight {
+      .project-content {
+        padding: 2rem 0 3rem 0;
+        .description {
+          padding-left: 27.5rem;
+        }
+        .links {
+          padding-left: 28rem;
+          margin-top: 2.5rem;
+        }
+      }
+    }
+  }
+
+}
+
+/*---------------- More M -----------*/
+@media only screen and (max-width: 1050px) {
+
+  .wrapper {
+    width: 85vw;
+  }
+
+  .w_separator {
+    width: 80vw;
+    margin: 2rem auto 1rem auto;
+  }
+
+  /* Contact Section ----------*/
+
+  #contact {
+    .links {
+      width: 70vw;
+    }
+  }
+
+}
+
+/*---------------- S -----------*/
+@media only screen and (max-width: 900px) {
+
+  .wrapper {
+    width: 90vw;
+  }
+
+  /* Banner -----------*/
+
+  #banner {
+    .content {
+      top: 15%;
+      left: 20%;
+      .title {
+        font-size: 4em;
+      }
+    }
+  }
+
+  /* Contact Section ----------*/
+
+  #contact {
+    .links {
+      width: 85vw;
+    }
+  }
+
+}
+
+/*---------------- More S -----------*/
+@media only screen and (max-width: 815px) {
+
+  /* Page dividers --------*/
+
+  .b_separator {
+    width: 80vw;
+  }
+
+  .w_separator {
+    width: 80vw;
+  }
+
+  /* Banner -----------*/
+
+  #banner {
+    .content {
+      top: 15%;
+      left: 15%;
+      .title {
+        font-size: 4em;
+      }
+    }
+  }
+
+  /* Bio section ---------*/
+
+  #bio {
+    .links {
+      a {
+        font-size: 1.2rem;
+        margin-right: 8%;
+      }
+    }
+  }
+
+  /* Skills section ----------*/
+
+  #skills {
+    .skill-content {
+      .description {
+        padding: 0 6rem;
+      }
+    }
+  }
+
+  /* Projects section --------- */
+
+  #projects {
+    .project-highlight {
+      .project-content {
+        .description {
+          padding-left: 24.5rem;
+        }
+        .links {
+          padding-left: 25rem;
+        }
+      }
+    }
+  }
+
+}
+
+/*-----------------------Tablet ---------------*/
+
+@media only screen and (max-width: 750px) {
+
+  /* Page dividers --------*/
+
+  .w_separator {
+    width: 85vw;
+    margin: 0 auto 1rem auto;
+    border-bottom: 1px solid $white;
+  }
+
+  /* Bio section ---------*/
+
+  #bio {
+    #avatar {
+      float: none;
+      margin: 0 auto;
+    }
+    .content {
+      h3 {
+        margin: 1rem 0;
+        text-align: center;
+        padding: 0;
+      }
+      .description {
+        padding: 0 2.5em;
+        text-align: center;
+      }
+    }
+    .links {
+      padding-left: 10%;
+      text-align: center;
+    }
+  }
+
+  /* Skills section ----------*/
+
+  #skills {
+    .skill-content {
+      .description {
+        padding: 0 4rem;
+      }
+    }
+  }
+
+  /* Projects section --------- */
+
+  #projects {
+    padding: 2rem 0 1rem 0;
+    h2 {
+      text-align: center;
+    }
+    h4 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .project-highlight {
+      width: 100%;
+      .project-title {
+        width: 96%;
+        h3 {
+          margin: 3rem 0 1.5rem 2rem;
+        }
+      }
+      .project-content {
+        #chat-room-thumbnail {
+          position: absolute;
+          left: 18%;
+          z-index: 1;
+          width: 65%;
+          &:hover {
+            box-shadow: 5px 5px 15px $tertiary;
+          }
+        }
+        #design-thumbnails {
+          .portfolio_thumbnail {
+            width: 40%;
+            left: 25%;
+          }
+          .bike_thumbnail {
+            width: 40%;
+            left: 30%;
+          }
+          .space_thumbnail {
+            width: 40%;
+            left: 35%;
+          }
+        }
+        .description {
+          padding: 0 3rem;
+          text-align: center;
+          margin-top: 18rem;
+        }
+        .links {
+          padding: 0 2rem;
+          margin: 2.5rem 0 0 26%;
+          a {
+            margin: 0 1rem;
+          }
+          i {
+            margin: 0 -0.2rem 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* Contact Section ----------*/
+
+  #contact {
+    padding-bottom: 3rem;
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      color: $secondary;
+      margin: 1em 0 .15em 0;
+      font-weight: 300;
+    }
+    h4 {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: $tertiary;
+      margin: 0 0 1.5em 0;
+    }
+    .links {
+      width: 90vw;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      div {
+        margin: .5rem 2rem;
+      }
+      a {
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-bottom: .5rem;
+      }
+      i {
+        font-size: 1.8rem;
+      }
+      .space {
+        margin-left: 1.2rem;
+      }
+      /* Specific styles for slightly smaller icons */
+      .blog {
+        margin-left: 1.3rem;
+      }
+      .email {
+        margin-left: 1.2rem;
+      }
+    }
+  }
+
+}
+
+/*-----------------------Mobile L ---------------*/
+@media only screen and (min-width: 600px) {
+
+}
+
+
+/*-----------------------XL ---------------*/
+@media only screen and (min-width: 1450px) {
+
+  /* Banner -----------*/
+
+  #banner {
+    width: 100vw;
+    height: 90vh;
+    background: url(../assets/images/baltimore_bg.jpg) no-repeat center;
+    background-size: cover;
+    .content {
+      position: absolute;
+      top: 12%;
+      left: 20%;
+      .title {                 // Title in ems to create that triangle effect.
+        color: $white;
+        font-size: 4.5em;
+        .second {
+          display: block;      // Make a newline.
+          font-size: 1em;
+        }
+        .third {
+          display: block;      // Make another newline.
+          font-size: .32em;
+          margin-top: .5em;
+        }
+      }
+    }
+  }
+
+  #banner {
+    .content {
+      .title {
+        font-size: 5em;
+      }
+    }
+  }
+
+  /* Projects -----------*/
+
+  #projects {
+    .project-highlight {
+      .project-content {
+        padding: 2rem 0 3rem 0;
+        .description {
+          padding-left: 30rem;
+        }
+        .links {
+          padding-left: 31.5rem
+        }
+      }
+    }
+  }
+
+}
+
+
+/* -------------------- XXL ----------*/
+@media only screen and (min-width: 1650px) {
+
+  /* Banner -----------*/
+
+  #banner {
+    .content {
+      top: 10%;
+      left: 25%;
+      .title {
+        font-size: 6em;
+      }
+    }
+  }
+
+  /* Bio section ---------*/
+
+  #bio {
+    margin: 5rem 0;
+    .wrapper {
+      width: 50vw;
+    }
+  }
+
+  /* Skills section ----------*/
+
+  #skills {
+    .skill-content {
+      .description {
+        padding: 0 15rem;
+      }
+    }
+  }
+
+  /* Projects -----------*/
+
+  #projects {
+    .project-highlight {
+      .project-content {
+        padding: 2rem 0 9rem 0;
+        .description {
+          padding-left: 36rem;
+        }
+        .links {
+          padding-left: 37.5rem
+        }
+      }
+    }
+  }
+
 }

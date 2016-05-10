@@ -13,7 +13,8 @@ html, body {
 
 .wrapper {
   width: 60vw;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
@@ -63,20 +64,23 @@ a {
 /* Banner -----------*/
 #banner {
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   background: url(../assets/images/baltimore_bg.jpg) no-repeat center;
   background-size: cover; }
-  #banner .content .title {
-    color: #ffffff;
-    font-size: 4.5em;
-    padding-top: .9em; }
-    #banner .content .title .second {
-      display: block;
-      font-size: 1em; }
-    #banner .content .title .third {
-      display: block;
-      font-size: .32em;
-      margin-top: .5em; }
+  #banner .content {
+    position: absolute;
+    top: 12%;
+    left: 20%; }
+    #banner .content .title {
+      color: #ffffff;
+      font-size: 4.5em; }
+      #banner .content .title .second {
+        display: block;
+        font-size: 1em; }
+      #banner .content .title .third {
+        display: block;
+        font-size: .32em;
+        margin-top: .5em; }
 
 /* Bio section ---------*/
 #bio {
@@ -102,7 +106,7 @@ a {
     margin-top: 2rem; }
     #bio .links a {
       font-size: 1.2rem;
-      margin-right: 6rem; }
+      margin-right: 18%; }
     #bio .links .blog,
     #bio .links .linkedin {
       font-size: 1.2rem;
@@ -300,7 +304,7 @@ a {
     color: #787878;
     margin: 0 0 1.5em 0; }
   #contact .links {
-    width: 50vw;
+    width: 60vw;
     margin: 0 auto;
     display: -webkit-box;
     display: -webkit-flex;
@@ -333,3 +337,253 @@ a {
       margin-left: 1.6rem; }
     #contact .links .email {
       margin-left: 1.2rem; }
+
+/* Media Queries ------*/
+/*---------------------- M ---------------*/
+@media only screen and (max-width: 1225px) {
+  .wrapper {
+    width: 70vw; }
+
+  /* Projects section --------- */
+  #projects .project-highlight .project-content {
+    padding: 2rem 0 3rem 0; }
+    #projects .project-highlight .project-content .description {
+      padding-left: 27.5rem; }
+    #projects .project-highlight .project-content .links {
+      padding-left: 28rem;
+      margin-top: 2.5rem; } }
+/*---------------- More M -----------*/
+@media only screen and (max-width: 1050px) {
+  .wrapper {
+    width: 85vw; }
+
+  .w_separator {
+    width: 80vw;
+    margin: 2rem auto 1rem auto; }
+
+  /* Contact Section ----------*/
+  #contact .links {
+    width: 70vw; } }
+/*---------------- S -----------*/
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    width: 90vw; }
+
+  /* Banner -----------*/
+  #banner .content {
+    top: 15%;
+    left: 20%; }
+    #banner .content .title {
+      font-size: 4em; }
+
+  /* Contact Section ----------*/
+  #contact .links {
+    width: 85vw; } }
+/*---------------- More S -----------*/
+@media only screen and (max-width: 815px) {
+  /* Page dividers --------*/
+  .b_separator {
+    width: 80vw; }
+
+  .w_separator {
+    width: 80vw; }
+
+  /* Banner -----------*/
+  #banner .content {
+    top: 15%;
+    left: 15%; }
+    #banner .content .title {
+      font-size: 4em; }
+
+  /* Bio section ---------*/
+  #bio .links a {
+    font-size: 1.2rem;
+    margin-right: 8%; }
+
+  /* Skills section ----------*/
+  #skills .skill-content .description {
+    padding: 0 6rem; }
+
+  /* Projects section --------- */
+  #projects .project-highlight .project-content .description {
+    padding-left: 24.5rem; }
+  #projects .project-highlight .project-content .links {
+    padding-left: 25rem; } }
+/*-----------------------Tablet ---------------*/
+@media only screen and (max-width: 750px) {
+  /* Page dividers --------*/
+  .w_separator {
+    width: 85vw;
+    margin: 0 auto 1rem auto;
+    border-bottom: 1px solid #ffffff; }
+
+  /* Bio section ---------*/
+  #bio #avatar {
+    float: none;
+    margin: 0 auto; }
+  #bio .content h3 {
+    margin: 1rem 0;
+    text-align: center;
+    padding: 0; }
+  #bio .content .description {
+    padding: 0 2.5em;
+    text-align: center; }
+  #bio .links {
+    padding-left: 10%;
+    text-align: center; }
+
+  /* Skills section ----------*/
+  #skills .skill-content .description {
+    padding: 0 4rem; }
+
+  /* Projects section --------- */
+  #projects {
+    padding: 2rem 0 1rem 0; }
+    #projects h2 {
+      text-align: center; }
+    #projects h4 {
+      text-align: center;
+      margin-bottom: 1rem; }
+    #projects .project-highlight {
+      width: 100%; }
+      #projects .project-highlight .project-title {
+        width: 96%; }
+        #projects .project-highlight .project-title h3 {
+          margin: 3rem 0 1.5rem 2rem; }
+      #projects .project-highlight .project-content #chat-room-thumbnail {
+        position: absolute;
+        left: 18%;
+        z-index: 1;
+        width: 65%; }
+        #projects .project-highlight .project-content #chat-room-thumbnail:hover {
+          box-shadow: 5px 5px 15px #787878; }
+      #projects .project-highlight .project-content #design-thumbnails .portfolio_thumbnail {
+        width: 40%;
+        left: 25%; }
+      #projects .project-highlight .project-content #design-thumbnails .bike_thumbnail {
+        width: 40%;
+        left: 30%; }
+      #projects .project-highlight .project-content #design-thumbnails .space_thumbnail {
+        width: 40%;
+        left: 35%; }
+      #projects .project-highlight .project-content .description {
+        padding: 0 3rem;
+        text-align: center;
+        margin-top: 18rem; }
+      #projects .project-highlight .project-content .links {
+        padding: 0 2rem;
+        margin: 2.5rem 0 0 26%; }
+        #projects .project-highlight .project-content .links a {
+          margin: 0 1rem; }
+        #projects .project-highlight .project-content .links i {
+          margin: 0 -0.2rem 0 0; }
+
+  /* Contact Section ----------*/
+  #contact {
+    padding-bottom: 3rem; }
+    #contact h2 {
+      text-align: center;
+      font-size: 3rem;
+      color: #d9686b;
+      margin: 1em 0 .15em 0;
+      font-weight: 300; }
+    #contact h4 {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #787878;
+      margin: 0 0 1.5em 0; }
+    #contact .links {
+      width: 90vw;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-flex-wrap: nowrap;
+          -ms-flex-wrap: nowrap;
+              flex-wrap: nowrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      /* Specific styles for slightly smaller icons */ }
+      #contact .links div {
+        margin: .5rem 2rem; }
+      #contact .links a {
+        font-size: 1rem;
+        margin-left: 1rem;
+        margin-bottom: .5rem; }
+      #contact .links i {
+        font-size: 1.8rem; }
+      #contact .links .space {
+        margin-left: 1.2rem; }
+      #contact .links .blog {
+        margin-left: 1.3rem; }
+      #contact .links .email {
+        margin-left: 1.2rem; } }
+/*-----------------------Mobile L ---------------*/
+/*-----------------------XL ---------------*/
+@media only screen and (min-width: 1450px) {
+  /* Banner -----------*/
+  #banner {
+    width: 100vw;
+    height: 90vh;
+    background: url(../assets/images/baltimore_bg.jpg) no-repeat center;
+    background-size: cover; }
+    #banner .content {
+      position: absolute;
+      top: 12%;
+      left: 20%; }
+      #banner .content .title {
+        color: #ffffff;
+        font-size: 4.5em; }
+        #banner .content .title .second {
+          display: block;
+          font-size: 1em; }
+        #banner .content .title .third {
+          display: block;
+          font-size: .32em;
+          margin-top: .5em; }
+
+  #banner .content .title {
+    font-size: 5em; }
+
+  /* Projects -----------*/
+  #projects .project-highlight .project-content {
+    padding: 2rem 0 3rem 0; }
+    #projects .project-highlight .project-content .description {
+      padding-left: 30rem; }
+    #projects .project-highlight .project-content .links {
+      padding-left: 31.5rem; } }
+/* -------------------- XXL ----------*/
+@media only screen and (min-width: 1650px) {
+  /* Banner -----------*/
+  #banner .content {
+    top: 10%;
+    left: 25%; }
+    #banner .content .title {
+      font-size: 6em; }
+
+  /* Bio section ---------*/
+  #bio {
+    margin: 5rem 0; }
+    #bio .wrapper {
+      width: 50vw; }
+
+  /* Skills section ----------*/
+  #skills .skill-content .description {
+    padding: 0 15rem; }
+
+  /* Projects -----------*/
+  #projects .project-highlight .project-content {
+    padding: 2rem 0 9rem 0; }
+    #projects .project-highlight .project-content .description {
+      padding-left: 36rem; }
+    #projects .project-highlight .project-content .links {
+      padding-left: 37.5rem; } }
