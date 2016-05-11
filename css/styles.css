@@ -72,11 +72,11 @@ a {
   background-size: cover; }
   #banner .content {
     position: absolute;
-    top: 12%;
-    left: 20%; }
+    top: 10%;
+    left: 22%; }
     #banner .content .title {
       color: #ffffff;
-      font-size: 4.5em; }
+      font-size: 5em; }
       #banner .content .title .second {
         display: block;
         font-size: 1em; }
@@ -364,6 +364,14 @@ a {
     width: 80vw;
     margin: 2rem auto 1rem auto; }
 
+  /* Banner -----------*/
+  #banner .content {
+    top: 12%;
+    left: 20%; }
+    #banner .content .title {
+      color: #ffffff;
+      font-size: 4.5em; }
+
   /* Contact Section ----------*/
   #contact .links {
     width: 70vw; } }
@@ -509,12 +517,13 @@ a {
       margin: 1rem 3rem; }
 
   #top_header.active {
-    height: 17.5rem; }
+    height: 18.5rem; }
     #top_header.active .header_wrapper #main_nav.active {
       display: block;
-      width: 60%;
+      width: 100%;
       margin: 0;
-      text-align: center; }
+      text-align: center;
+      font-size: 1.2rem; }
       #top_header.active .header_wrapper #main_nav.active a {
         display: block;
         padding: 1rem 0;
@@ -523,7 +532,192 @@ a {
           border-bottom: none; }
 
   #main_nav {
-    display: none; } }
+    display: none; }
+
+  /* Bio section ---------*/
+  #bio .content .description {
+    padding: 0; }
+
+  /* Skills section ----------*/
+  #skills h2 {
+    font-size: 2.7rem; }
+  #skills #skill-icons {
+    left: 60%; }
+    #skills #skill-icons .icon {
+      width: 70px;
+      height: 70px; }
+  #skills .skill-content .description {
+    padding: 0; }
+
+  /* Projects section --------- */
+  #projects .project-highlight .project-title {
+    width: 100%; }
+    #projects .project-highlight .project-title h3 {
+      display: block;
+      font-size: 1.6rem;
+      text-align: center;
+      margin: 3rem 0 1.5rem 0; }
+    #projects .project-highlight .project-title .skill-tags {
+      float: none;
+      margin: 0 auto 1rem auto;
+      text-align: center; }
+      #projects .project-highlight .project-title .skill-tags img {
+        height: 30px; }
+  #projects .project-highlight .project-content #chat-room-thumbnail {
+    position: absolute;
+    left: 7%;
+    z-index: 1;
+    width: 85%; }
+    #projects .project-highlight .project-content #chat-room-thumbnail:hover {
+      box-shadow: 5px 5px 15px #787878; }
+  #projects .project-highlight .project-content #design-thumbnails .portfolio_thumbnail {
+    width: 60%;
+    left: 10%; }
+  #projects .project-highlight .project-content #design-thumbnails .bike_thumbnail {
+    width: 50%;
+    left: 25%; }
+  #projects .project-highlight .project-content #design-thumbnails .space_thumbnail {
+    width: 50%;
+    left: 40%; }
+  #projects .project-highlight .project-content .description {
+    padding: 0;
+    font-size: 1.1rem; }
+  #projects .project-highlight .project-content .links {
+    padding: 0 2rem;
+    margin: 2.5rem 0 0 0;
+    text-align: center;
+    font-size: 1.1rem; }
+
+  /* Contact Section ----------*/
+  #contact h4 {
+    margin: 0 0 0.5em 0; }
+  #contact .links {
+    width: 90vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* Specific styles for slightly smaller icons */ }
+    #contact .links div {
+      margin: -0.4rem auto; }
+    #contact .links .second-col {
+      padding-right: 1rem; }
+    #contact .links a {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      margin-bottom: .5rem; }
+    #contact .links i {
+      font-size: 1.8rem; }
+    #contact .links .space {
+      margin-left: 1.2rem; }
+    #contact .links .blog {
+      margin-left: 1.3rem; } }
+/*-----------------------M & S Mobile ---------------*/
+@media only screen and (max-width: 480px) {
+  /* Banner -----------*/
+  #banner .content {
+    top: 9%;
+    left: 9%; }
+    #banner .content .title {
+      color: #ffffff;
+      font-size: 3.5em; }
+
+  /* Header -------------*/
+  #top_header.active .header_wrapper #main_nav.active {
+    width: 100%; }
+
+  /* Bio section ---------*/
+  #bio .content .description {
+    padding: 0; }
+  #bio .links {
+    padding: 0;
+    margin-top: 2rem; }
+    #bio .links div a {
+      font-size: 1.2rem;
+      margin: 0; }
+    #bio .links div .blog,
+    #bio .links div .linkedin {
+      font-size: 1.2rem;
+      margin-right: 1rem; }
+
+  /* Skills section ----------*/
+  #skills h2 {
+    font-size: 2.2rem; }
+  #skills #skill-icons {
+    left: 66%; }
+    #skills #skill-icons .icon {
+      width: 60px;
+      height: 60px; }
+
+  /* Projects section --------- */
+  #projects .project-highlight .project-content #chat-room-thumbnail {
+    position: absolute;
+    left: 3%;
+    width: 95%; }
+  #projects .project-highlight .project-content #design-thumbnails .portfolio_thumbnail {
+    width: 70%;
+    left: 8%;
+    top: 5%; }
+  #projects .project-highlight .project-content #design-thumbnails .bike_thumbnail {
+    width: 60%;
+    left: 20%;
+    top: 10%; }
+  #projects .project-highlight .project-content #design-thumbnails .space_thumbnail {
+    width: 60%;
+    left: 35%;
+    top: 15%; }
+
+  /* Contact Section ----------*/
+  #contact h2 {
+    font-size: 2.6rem; }
+  #contact h4 {
+    font-size: 0.9rem; }
+  #contact .links {
+    width: 90vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* Specific styles for slightly smaller icons */ }
+    #contact .links div {
+      margin: -0.4rem auto; }
+    #contact .links .second-col {
+      padding-right: 1rem; }
+    #contact .links a {
+      font-size: 1.5rem;
+      margin-left: 1rem;
+      margin-bottom: .5rem; }
+    #contact .links i {
+      font-size: 1.8rem; }
+    #contact .links .space {
+      margin-left: 1.2rem; }
+    #contact .links .blog {
+      margin-left: 1.3rem; } }
+@media only screen and (max-width: 385px) {
+  #banner .content {
+    top: 9%;
+    left: 9%; }
+    #banner .content .title {
+      font-size: 3em; }
+    #banner .content .third {
+      display: block;
+      font-size: .3em;
+      margin-top: .5em; } }
+@media only screen and (max-width: 340px) {
+  #banner {
+    width: 100vw;
+    height: 90vh;
+    background: url(../assets/images/baltimore_bg.jpg) no-repeat center;
+    background-size: cover; }
+    #banner .content .title .second {
+      display: block;
+      font-size: 1em; }
+    #banner .content .title .third {
+      display: block;
+      font-size: .3em;
+      margin-top: .5em; } }
 /*-----------------------XL ---------------*/
 @media only screen and (min-width: 1450px) {
   /* Banner -----------*/
@@ -538,7 +732,7 @@ a {
       left: 20%; }
       #banner .content .title {
         color: #ffffff;
-        font-size: 4.5em; }
+        font-size: 7em; }
         #banner .content .title .second {
           display: block;
           font-size: 1em; }
@@ -561,10 +755,10 @@ a {
 @media only screen and (min-width: 1650px) {
   /* Banner -----------*/
   #banner .content {
-    top: 10%;
-    left: 25%; }
+    top: 13%;
+    left: 22%; }
     #banner .content .title {
-      font-size: 6em; }
+      font-size: 7em; }
 
   /* Bio section ---------*/
   #bio {
@@ -583,3 +777,15 @@ a {
       padding-left: 36rem; }
     #projects .project-highlight .project-content .links {
       padding-left: 37.5rem; } }
+/* -------------------- Massive ----------*/
+@media only screen and (min-width: 2000px) {
+  .wrapper {
+    width: 40vw; }
+
+  /* Bio section ---------*/
+  #bio {
+    margin: 5rem 0; }
+    #bio .wrapper {
+      width: 40vw; } }
+#contact .links {
+  width: 41vw; }
