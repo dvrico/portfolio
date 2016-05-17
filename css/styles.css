@@ -72,7 +72,7 @@ a {
   background-size: cover; }
   #banner .content {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 22%; }
     #banner .content .title {
       color: #ffffff;
@@ -105,8 +105,8 @@ a {
     color: #787878;
     padding-left: 11.7em; }
   #bio .links {
-    padding-left: 14em;
-    margin-top: 2rem; }
+    padding-left: 16em;
+    margin-top: 1.5rem; }
     #bio .links a {
       font-size: 1.2rem;
       margin-right: 18%; }
@@ -208,6 +208,12 @@ a {
         z-index: 1;
         width: 45%; }
         #projects .project-highlight .project-content #chat-room-thumbnail:hover {
+          box-shadow: 5px 5px 15px #787878; }
+      #projects .project-highlight .project-content #witness-thumbnail {
+        position: absolute;
+        z-index: 1;
+        width: 45%; }
+        #projects .project-highlight .project-content #witness-thumbnail:hover {
           box-shadow: 5px 5px 15px #787878; }
       #projects .project-highlight .project-content #design-thumbnails .portfolio_thumbnail {
         position: absolute;
@@ -461,6 +467,13 @@ a {
         width: 96%; }
         #projects .project-highlight .project-title h3 {
           margin: 3rem 0 1.5rem 2rem; }
+      #projects .project-highlight .project-content #witness-thumbnail {
+        position: absolute;
+        left: 37%;
+        z-index: 1;
+        width: 28%; }
+        #projects .project-highlight .project-content #witness-thumbnail:hover {
+          box-shadow: 5px 5px 15px #787878; }
       #projects .project-highlight .project-content #chat-room-thumbnail {
         position: absolute;
         left: 18%;
@@ -563,6 +576,13 @@ a {
       text-align: center; }
       #projects .project-highlight .project-title .skill-tags img {
         height: 30px; }
+  #projects .project-highlight .project-content #witness-thumbnail {
+    position: absolute;
+    left: 33%;
+    z-index: 1;
+    width: 38%; }
+    #projects .project-highlight .project-content #witness-thumbnail:hover {
+      box-shadow: 5px 5px 15px #787878; }
   #projects .project-highlight .project-content #chat-room-thumbnail {
     position: absolute;
     left: 7%;
@@ -651,6 +671,13 @@ a {
       height: 60px; }
 
   /* Projects section --------- */
+  #projects .project-highlight .project-content #witness-thumbnail {
+    position: absolute;
+    left: 27%;
+    z-index: 1;
+    width: 45%; }
+    #projects .project-highlight .project-content #witness-thumbnail:hover {
+      box-shadow: 5px 5px 15px #787878; }
   #projects .project-highlight .project-content #chat-room-thumbnail {
     position: absolute;
     left: 3%;
@@ -755,7 +782,7 @@ a {
 @media only screen and (min-width: 1650px) {
   /* Banner -----------*/
   #banner .content {
-    top: 13%;
+    top: 8%;
     left: 22%; }
     #banner .content .title {
       font-size: 7em; }
@@ -776,7 +803,11 @@ a {
     #projects .project-highlight .project-content .description {
       padding-left: 36rem; }
     #projects .project-highlight .project-content .links {
-      padding-left: 37.5rem; } }
+      padding-left: 37.5rem; }
+
+  /* Contact -----------*/
+  #contact .links {
+    width: 60vw; } }
 /* -------------------- Massive ----------*/
 @media only screen and (min-width: 2000px) {
   .wrapper {
@@ -787,5 +818,3 @@ a {
     margin: 5rem 0; }
     #bio .wrapper {
       width: 40vw; } }
-#contact .links {
-  width: 41vw; }

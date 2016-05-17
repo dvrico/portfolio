@@ -99,7 +99,7 @@ a {
   background-size: cover;
   .content {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 22%;
     .title {                 // Title in ems to create that triangle effect.
       color: $white;
@@ -143,8 +143,8 @@ a {
     }
   }
   .links {
-    padding-left: 14em;
-    margin-top: 2rem;
+    padding-left: 16em;
+    margin-top: 1.5rem;
     a {
       font-size: 1.2rem;
       margin-right: 18%; //6rem
@@ -272,6 +272,14 @@ a {
     .project-content {
       position: relative;
       #chat-room-thumbnail {
+        position: absolute;
+        z-index: 1;
+        width: 45%;
+        &:hover {
+          box-shadow: 5px 5px 15px $tertiary;
+        }
+      }
+      #witness-thumbnail {
         position: absolute;
         z-index: 1;
         width: 45%;
@@ -625,6 +633,15 @@ a {
         }
       }
       .project-content {
+        #witness-thumbnail {
+          position: absolute;
+          left: 37%;
+          z-index: 1;
+          width: 28%;
+          &:hover {
+            box-shadow: 5px 5px 15px $tertiary;
+          }
+        }
         #chat-room-thumbnail {
           position: absolute;
           left: 18%;
@@ -785,6 +802,15 @@ a {
         }
       }
       .project-content {
+        #witness-thumbnail {
+          position: absolute;
+          left: 33%;
+          z-index: 1;
+          width: 38%;
+          &:hover {
+            box-shadow: 5px 5px 15px $tertiary;
+          }
+        }
         #chat-room-thumbnail {
           position: absolute;
           left: 7%;
@@ -927,6 +953,15 @@ a {
   #projects {
     .project-highlight {
       .project-content {
+        #witness-thumbnail {
+          position: absolute;
+          left: 27%;
+          z-index: 1;
+          width: 45%;
+          &:hover {
+            box-shadow: 5px 5px 15px $tertiary;
+          }
+        }
         #chat-room-thumbnail {
           position: absolute;
           left: 3%;
@@ -1098,7 +1133,7 @@ a {
 
   #banner {
     .content {
-      top: 13%;
+      top: 8%;
       left: 22%;
       .title {
         font-size: 7em;
@@ -1141,6 +1176,14 @@ a {
     }
   }
 
+  /* Contact -----------*/
+
+  #contact {
+    .links {
+      width: 60vw;
+    }
+  }
+
 }
 
 /* -------------------- Massive ----------*/
@@ -1159,10 +1202,4 @@ a {
     }
   }
 
-}
-
-#contact {
-  .links {
-    width: 41vw;
-  }
 }
